@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int a[10] = {10,20,30};
+    int n = 3, newVal;
+
+    printf("Enter new value: ");
+    scanf("%d", &newVal);
+
+    a[n] = newVal;
+    n++;
+
+    for(int i = 0; i < n; i++) {
+        printf("%d ", a[i]);
+    }
+    return 0;
+}
