@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+struct item {
+    int id;
+    int price;
+};
+
+int main() {
+    struct item i[2] = {{1,50},{2,100}};
+    int search;
+
+    scanf("%d", &search);
+
+    for(int j = 0; j < 2; j++) {
+        if(i[j].id == search) {
+            scanf("%d", &i[j].price);
+            printf("Updated Price = %d", i[j].price);
+        }
+    }
+    return 0;
+}
