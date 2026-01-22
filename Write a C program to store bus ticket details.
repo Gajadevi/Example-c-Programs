@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+struct ticket {
+    int ticketNo;
+    char from[20];
+    char to[20];
+};
+
+int main() {
+    struct ticket t;
+
+    printf("Enter ticket number: ");
+    scanf("%d", &t.ticketNo);
+
+    printf("From: ");
+    scanf("%s", t.from);
+
+    printf("To: ");
+    scanf("%s", t.to);
+
+    printf("\nTicket Details:\n");
+    printf("Ticket No: %d\nFrom: %s\nTo: %s",
+           t.ticketNo, t.from, t.to);
+
+    return 0;
+}
